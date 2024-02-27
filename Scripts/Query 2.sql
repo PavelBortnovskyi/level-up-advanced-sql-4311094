@@ -1,4 +1,4 @@
-#LEFT JOIN to retrieve salesman with zero sales
+--LEFT JOIN to retrieve salesman with zero sales
 
 SELECT emp.firstName,
        emp.lastName,

@@ -1,4 +1,4 @@
-#SELF JOIN to retrieve employee and managers info
+--SELF JOIN to retrieve employee and managers info
 
 SELECT emp.firstName, 
        emp.lastName,
