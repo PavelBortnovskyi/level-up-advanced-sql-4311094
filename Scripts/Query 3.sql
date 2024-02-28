@@ -1,3 +1,5 @@
+--Retrieving all records of customers and their sales
+
 --OUTER JOIN APPROACH
 SELECT cst.firstName,
        cst.lastName,
