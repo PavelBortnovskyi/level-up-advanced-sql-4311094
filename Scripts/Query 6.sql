@@ -11,7 +11,7 @@ FROM sales sls
 INNER JOIN employee emp 
 ON sls.employeeId = emp.employeeId 
 --WHERE sls.soldDate >= DATE('now', 'start of year')
-WHERE strftime('%Y', sls.soldDate) = '2023'
+WHERE strftime('%Y', sls.soldDate) = strftime('%Y', 'now')
 GROUP BY emp.employeeId, emp.firstName, emp.lastName
 HAVING totalSales > 5
 ORDER BY totalSales DESC
